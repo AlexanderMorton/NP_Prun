@@ -1,0 +1,288 @@
+void para_02TeV_2Lep_plots_All()
+{
+//=========Macro generated from canvas: c1/Parameter0
+//=========  (Sun Nov 22 20:04:45 2015) by ROOT version6.02/12
+   TCanvas *c1 = new TCanvas("c1", "Parameter0",0,22,1000,600);
+   gStyle->SetOptStat(0);
+   c1->Range(-4.375,25.88169,39.375,28.9985);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetGridx();
+   c1->SetGridy();
+   c1->SetFrameBorderMode(0);
+   c1->SetFrameBorderMode(0);
+   
+   TH1F *NuisanceParameterFreed1 = new TH1F("NuisanceParameterFreed1","Chi2",35,0,35);
+   NuisanceParameterFreed1->SetMinimum(26.19337);
+   NuisanceParameterFreed1->SetMaximum(28.68682);
+   NuisanceParameterFreed1->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   NuisanceParameterFreed1->SetLineColor(ci);
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(1,"FT_EFF_extrapolation");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(2,"MUON_ISO_STAT");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(3,"MUONS_SCALE");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(4,"FT_EFF_Eigen_Light_2");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(5,"MUON_EFF_STAT");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(6,"EL_EFF_Reco_TotalCorrUncertainty");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(7,"FT_EFF_Eigen_Light_1");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(8,"MUON_EFF_SYS");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(9,"EG_RESOLUTION_ALL");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(10,"EL_EFF_Iso_TotalCorrUncertainty");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(11,"FT_EFF_Eigen_B_2");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(12,"MUON_EFF_TrigStatUncertainty");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(13,"EL_EFF_ID_TotalCorrUncertainty");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(14,"FT_EFF_Eigen_B_0");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(15,"XS_diboson");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(16,"FT_EFF_Eigen_Light_4");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(17,"XS_Zl");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(18,"MUON_ISO_SYS");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(19,"FT_EFF_Eigen_Light_3");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(20,"MUON_EFF_TrigSystUncertainty");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(21,"FT_EFF_Eigen_C_3");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(22,"FT_EFF_Eigen_C_1");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(23,"FT_EFF_Eigen_C_2");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(24,"XS_Zb");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(25,"MUONS_ID");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(26,"FT_EFF_Eigen_B_1");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(27,"XS_Zc");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(28,"FT_EFF_Eigen_C_0");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(29,"XS_st");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(30,"Luminosity");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(31,"EG_SCALE_ALL");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(32,"XS_ttbar");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(33,"FT_EFF_Eigen_Light_0");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(34,"global");
+   NuisanceParameterFreed1->GetXaxis()->SetBinLabel(35,"MUONS_MS");
+   NuisanceParameterFreed1->GetXaxis()->SetLabelFont(42);
+   NuisanceParameterFreed1->GetXaxis()->SetLabelSize(0.035);
+   NuisanceParameterFreed1->GetXaxis()->SetTitleSize(0.035);
+   NuisanceParameterFreed1->GetXaxis()->SetTitleFont(42);
+   NuisanceParameterFreed1->GetYaxis()->SetTitle("Chi2");
+   NuisanceParameterFreed1->GetYaxis()->SetLabelFont(42);
+   NuisanceParameterFreed1->GetYaxis()->SetLabelSize(0.035);
+   NuisanceParameterFreed1->GetYaxis()->SetTitleSize(0.035);
+   NuisanceParameterFreed1->GetYaxis()->SetTitleFont(42);
+   NuisanceParameterFreed1->GetZaxis()->SetLabelFont(42);
+   NuisanceParameterFreed1->GetZaxis()->SetLabelSize(0.035);
+   NuisanceParameterFreed1->GetZaxis()->SetTitleSize(0.035);
+   NuisanceParameterFreed1->GetZaxis()->SetTitleFont(42);
+   NuisanceParameterFreed1->Draw("hist");
+   
+   Double_t _fx1001[37] = {
+   0,
+   0.5,
+   1.5,
+   2.5,
+   3.5,
+   4.5,
+   5.5,
+   6.5,
+   7.5,
+   8.5,
+   9.5,
+   10.5,
+   11.5,
+   12.5,
+   13.5,
+   14.5,
+   15.5,
+   16.5,
+   17.5,
+   18.5,
+   19.5,
+   20.5,
+   21.5,
+   22.5,
+   23.5,
+   24.5,
+   25.5,
+   26.5,
+   27.5,
+   28.5,
+   29.5,
+   30.5,
+   31.5,
+   32.5,
+   33.5,
+   34.5,
+   0};
+   Double_t _fy1001[37] = {
+   0,
+   26.19337,
+   26.19341,
+   26.19341,
+   26.19347,
+   26.19348,
+   26.19349,
+   26.19349,
+   26.19364,
+   26.19365,
+   26.19368,
+   26.19379,
+   26.1939,
+   26.19395,
+   26.19399,
+   26.19416,
+   26.1943,
+   26.19436,
+   26.19443,
+   26.19446,
+   26.19479,
+   26.19527,
+   26.19551,
+   26.19552,
+   26.19772,
+   26.19925,
+   26.20177,
+   26.2026,
+   26.20516,
+   26.20962,
+   26.21588,
+   26.25592,
+   26.46192,
+   26.549,
+   27.11235,
+   28.68682,
+   0};
+   Double_t _fex1001[37] = {
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0};
+   Double_t _fey1001[37] = {
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0};
+   TGraphErrors *gre = new TGraphErrors(37,_fx1001,_fy1001,_fex1001,_fey1001);
+   gre->SetName("");
+   gre->SetTitle("");
+   gre->SetFillColor(1);
+   gre->SetMarkerStyle(20);
+   gre->SetMarkerSize(1.2);
+   
+   TH1F *Graph_Graph1001 = new TH1F("Graph_Graph1001","",100,0,37.95);
+   Graph_Graph1001->SetMinimum(0);
+   Graph_Graph1001->SetMaximum(31.5555);
+   Graph_Graph1001->SetDirectory(0);
+   Graph_Graph1001->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph1001->SetLineColor(ci);
+   Graph_Graph1001->GetXaxis()->SetLabelFont(42);
+   Graph_Graph1001->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph1001->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph1001->GetXaxis()->SetTitleFont(42);
+   Graph_Graph1001->GetYaxis()->SetLabelFont(42);
+   Graph_Graph1001->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph1001->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph1001->GetYaxis()->SetTitleFont(42);
+   Graph_Graph1001->GetZaxis()->SetLabelFont(42);
+   Graph_Graph1001->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph1001->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph1001->GetZaxis()->SetTitleFont(42);
+   gre->SetHistogram(Graph_Graph1001);
+   
+   gre->Draw("p");
+   
+   TLegend *leg = new TLegend(0.1,0.4,0.4,0.95,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextFont(72);
+   leg->SetTextSize(0.015);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(0);
+   TLegendEntry *entry=leg->AddEntry("","global","P");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(20);
+   entry->SetMarkerSize(1.2);
+   entry->SetTextFont(72);
+   leg->Draw();
+   
+   TPaveText *pt = new TPaveText(0.4588755,0.94,0.5411245,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   TText *AText = pt->AddText("Chi2");
+   pt->Draw();
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+}
